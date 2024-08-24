@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Gestão de Perfomance</title>
+</head>
+<body id="body">
+    <header>
+        <button onclick="trocarTema()">tema</button>
+
+        <div class="menuDesktop">
+            <nav class="linha">
+                <div class="linha gapCabecalho">
+                    <img src="img/logo.png" alt="Logo Uníntese">
+                    <div class="linha">
+                        <a class="corLink" href="*">Graduação</a>
+                        <a class="corLink" href="*">Blog</a>
+                    </div>
+                </div>
+                <div class="linha gapCabecalho">
+                    <div class="linha bordaBusca" style="gap: 0">
+                        <input class="inputBusca" placeholder="Buscar" type="text" name="busca">
+                        <img src="img/lupa.svg" alt="Lupa">
+                    </div>
+                    
+                    <a class="corLink" href="*"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;&nbsp;Ambiente Virtual</a>
+                </div>  
+            </nav>
+        </div>
+        <div class="menuMobile">
+            <div>
+                <img src="img/logo.png" alt="Logo Uníntese">
+                <button class="botaoMenu" onclick="chamaMenu()">☰</button>
+            </div>
+            <nav id="opcoesMenu">
+                <ul>
+                    <li><a class="corLink" href="*">Graduação</a></li>
+                    <li><a class="corLink" href="*">Blog</a></li>
+                    <li><a class="corLink" href="*"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;&nbsp;Ambiente Virtual</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="marginSite" title="Faculdade.Digital">
+            <h1 class="tituloSite corEscrita">Nós somos uma <strong>faculdade digital</strong></h1>
+            <div class="containerSubtitulo">
+                <h2 class="subtituloSite corEscrita">Você, preparado para <b>o futuro.</b></h2>
+                <img src="img/seta-amarela.png" alt="Seta amarela apontando para baixo">
+                <span class="textoSite corEscrita">Se preparar para o mercado é uma coisa, prosperar nele é outra. <b>Nossa graduação te ajuda com as duas</b></span>
+            </div>
+        </section>
+
+
+        <section class="corFundo">
+            <div class="marginSite containerCarreira">
+                <img class="posicaoPersonagem" src="img/personagem.jpg" alt="Homem sentado utilizando um notebook">
+                <img class="posicaoPersonagemMobile" src="img/personagem.jpg" alt="Homem sentado utilizando um notebook">
+                <div>
+                    <h2 class="titulosEcolhaCarreira">Escolha sua Carreira</h2>
+                    <div class="containerGraduacao corFundoGraduacao">
+                        <span class="textoGraduacao opacidadeTextoGraduacao">Graduação</span>
+                        <span class="textoGraduacao pesoFonteTextoGraduacao">Análise e Desenvolvimento de Sistemas</span>
+                        <div class="containerBotoes">
+                            <img src="img/seta-esquerda.svg" alt="Seta apontando para a esquerda">
+                            <img src="img/seta-direita.svg" alt="Seta apontando para a direita">
+                        </div>
+                    </div>
+                    <h3 class="textoGraduacao opacidadeTextoGraduacao pesoFonteTextoGraduacao" style="margin-top: 8%;">Soft skills que você vai desenvolver:</h3>
+                    <div style="display: flex; gap: 60px;">
+                        <div  style="display: flex; flex-direction: column; gap: 25px;">
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Criatividade</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Liderança</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Gerenciamento de Tempo</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div  style="display: flex; flex-direction: column; gap: 25px;">
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Inovação</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Comunicação</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="textoGraduacao opacidadeSkillGraduacao">Habilidade Interpessoal</span>
+                                <div style="display:flex; gap: 8px; margin-top: 5px;">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-cheia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                    <img class="tamanhoEstrela" src="img/estrela-vazia.png" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="posicaoInscreverSe">
+            <a class="botaoInscreverSe" href="#">Inscrever-se</a>
+        </section>
+
+        <section class="marginSiteSecundaria">
+            <h2 class="corEscrita" style="font-weight: 500;">Cursos <b>livres e gratuitos</b> para você</h2>
+
+            <div style="display: flex; gap: 20px;">
+                <a class="botaoCursoGratuito" href="#"><img class="imgCursoGratuito" src="img/lideranca.jpg" alt="Peças de xadrez"></a>
+                <a class="botaoCursoGratuito" href="#"><img class="imgCursoGratuito" src="img/cargos-e-salarios.jpg" alt="Maleta com moedas ao fundo"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <img src="img/logo.png" alt="Logo Uníntese">
+            <div style="display: flex; gap: 15px;">
+                <a href="#"><img src="img/facebook (1).png" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram (1).png" alt="Instagram"></a>
+                <a href="#"><img src="img/x.png" alt="Twitter / X"></a>
+                <a href="#"><img src="img/linkedin.png" alt="Linkedin"></a>
+                <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <a href="#"><img src="img/qr-code.png" alt="QR Code para Cadastro do E-MEC"></a>
+    </footer>
+
+    <script>
+        var menu = document.getElementById("opcoesMenu");
+
+        var body = document.getElementById("body");
+    
+        function chamaMenu(){
+            if(menu.style.display == "none"){
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        
+        function trocarTema(){
+            if (body.style.backgroundColor == "white"){
+                body.style.backgroundColor = "grey";
+            } else{
+                body.style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+
+</html>

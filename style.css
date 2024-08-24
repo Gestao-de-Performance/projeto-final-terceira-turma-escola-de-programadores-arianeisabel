@@ -1,0 +1,378 @@
+:root{
+    --purple-100: #8E35FF;
+
+    --purple-200: #5913b453;
+
+    --purple-300: #5A13B4;
+
+    --purple-400: #3B1270;
+
+    --pink-100: #ded0f143;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    margin: 2% 5%;
+}
+
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--pink-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 5% 0;
+    margin-top: 5%;
+}
+
+/*Início cabeçalho*/
+.menuMobile{
+    display: none;
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gapCabecalho{
+    gap: 2.5rem;
+}
+
+.corLink{
+    color: var(--purple-300);
+}
+
+.inputBusca, .inputBusca:focus{
+    outline: none;
+    border: none;
+    color: var(--purple-300);
+}
+
+.inputBusca::placeholder{
+    color: var(--purple-300);
+    opacity: 0.6;
+}
+
+.bordaBusca{
+    border: 1px solid var(--purple-200);
+    padding:  0.3rem 0.7rem;
+}
+/*Fim Cabeçalho*/
+
+/*Início Título*/
+.marginSite{
+    margin: 8% 18%;
+}
+
+.corEscrita{
+    color: var(--purple-400);
+}
+
+.tituloSite{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.containerSubtitulo{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    min-height: 260px;
+}
+
+.subtituloSite{
+    font-size: 6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.textoSite{
+    max-width: 237px;
+    align-self: flex-end;
+}
+
+
+/*Fim Título*/
+
+/*Início Escolha seu Curso*/
+
+.corFundo{
+    background-color: var(--purple-400);
+}
+
+.containerCarreira{
+    display: flex;
+    gap: 30px;
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -70px;
+}
+
+.titulosEcolhaCarreira{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.containerGraduacao{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+}
+
+.corFundoGraduacao{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2.5%;
+}
+
+.textoGraduacao{
+    color: white;
+}
+
+.opacidadeTextoGraduacao{
+    opacity: 0.7;
+}
+
+.pesoFonteTextoGraduacao{
+    font-weight: 600;
+}
+
+.containerBotoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.opacidadeSkillGraduacao{
+    opacity: 0.55;
+}
+
+.tamanhoEstrela{
+    width: 17px;
+    height: 16px;
+}
+
+.posicaoPersonagemMobile{
+    display: none;
+}
+/*Fim Escolha seu Curso*/
+
+/*Início Botão Inscrever-se*/
+.posicaoInscreverSe{
+    position: relative;
+    top: -205px;
+    margin: 0 18%;
+}
+
+.botaoInscreverSe{
+    background-color: var(--purple-100);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+
+    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.7);
+
+    transition: background-color 0.4s ease;
+}
+
+.botaoInscreverSe:hover{
+    background-color: var(--purple-300);
+}
+
+/*Fim Botão Inscrever-se*/
+
+
+/*Início Cursos Gratuitos*/
+.marginSiteSecundaria{
+    margin: -5% 18% 0 18%;
+}
+
+.botaoCursoGratuito{
+    transition: transform 0.5s ease;
+}
+
+.botaoCursoGratuito:hover{
+    transform:scale(1.06);
+}
+
+.imgCursoGratuito{
+    width: 100%;
+    height: 100%;
+}
+/*Fim Cursos Gratuitos*/
+
+/*Início Responsividade*/
+
+/*Início 1440px*/
+@media screen and (max-width: 1440px){
+    /*Início Cabeçalho - 1440px*/
+    .containerSubtitulo{
+        min-height: 210px;
+    }
+
+    .subtituloSite{
+        font-size: 4rem;
+    }
+    /*Fim Cabeçalho - 1440px*/
+
+    /*Início Botão Inscrever-se 1440px*/
+    .posicaoInscreverSe{
+        margin: 0 5% 0 18%;
+    }
+    /*Fim Botão Inscrever-se 1440px*/
+}
+/*Fim 1440px*/
+
+/*Inicio 1024px*/
+@media screen and (max-width: 1024px){
+    /*Início Titulo 1024px*/
+    .marginSite{
+        margin: 8% 10%;
+    }
+    /*Fim Titulo 1024px*/
+
+    /*Inicio Cabecalho 1024px*/
+    .containerSubtitulo	{
+        gap: 20px;
+    }
+
+    .subtituloSite{
+        font-size: 2.6rem;
+    }
+    /*Fim Cabecalho 1024px*/
+
+    /*Inicio Escolha seu Curso 1024px*/
+    .posicaoPersonagem{
+       width: 35%;
+       height: 100%;
+       top: 0;
+    }
+
+    .containerCarreira{
+        align-items: center;
+        min-height: 350px;
+        padding-bottom: 10%;
+    }
+
+    .titulosEcolhaCarreira{
+        font-size: 1.4rem;
+    }
+
+    .containerGraduacao{
+        min-width: 395px;
+    }
+
+    .textoGraduacao{
+        font-size: 0.8rem;
+    }
+    /*Fim Escolha seu Curso 1024px*/
+
+    /*Inicio Botao Inscrever-se 1024px*/
+    .posicaoInscreverSe{
+        top: -115px;
+        margin-left: 10%; 
+    }
+    /*Fim Botao Inscrever-se 1024px*/
+
+    /*Inicio Cursos Gratuitos 1024px*/
+    .marginSiteSecundaria{
+        margin: -5% 10% 0 10%; 
+    }
+    /*Fim Cursos Gratuitos 1024px*/
+}
+/*Fim 1024px*/
+
+
+/*Inicio 767px*/
+@media screen and (max-width: 767px){
+    /*Inicio Titulo 767px*/
+    .menuDesktop{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+    #opcoesMenu{
+        display: none;
+    }
+
+    .marginSite{
+        margin: 8%;
+    }
+
+    .tituloSite{
+        font-size: 1.8rem;
+    }
+
+    .containerSubtitulo{
+        flex-wrap: wrap;
+    }
+
+    .containerSubtitulo img{
+        display: none;
+    }
+    /*Fim Titulo 767px*/
+
+    /*Inicio Escolha seu Curso 767px*/
+    .posicaoPersonagem{
+        display: none;
+    }
+
+    .containerGraduacao{
+        min-width: 300px;
+        align-items: center;
+    }
+
+    .textoGraduacao{
+        font-size: 0.6rem;
+    }
+    /*Fim Escolha seu Curso 767px*/
+
+    /*Inicio Botao Inscrever-se 767px*/
+    .posicaoInscreverSe{
+        top: -70px;
+        margin: 0 10%;
+    }
+
+    .botaoInscreverSe{
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+    /*Fim Botao Inscrever-se 767px*/
+
+    /*Inicio Rodape 767px*/
+    footer{
+        flex-wrap: wrap;
+    }
+    /*Fim Rodape 767px*/
+}
+/*Fim 767px*/
